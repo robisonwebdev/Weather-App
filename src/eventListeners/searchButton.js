@@ -1,10 +1,12 @@
+import clearSearch from "../clearSearch";
 import getLocationData from "../getLocationData";
 
 function searchButton(target) {
-    target.addEventListener('click', () => {
+    target.addEventListener('click', async () => {
         const searchBar = document.querySelector('#search');
 
-        getLocationData(searchBar.value);
+        await getLocationData(searchBar.value);
+        clearSearch();
     })
 }
 
