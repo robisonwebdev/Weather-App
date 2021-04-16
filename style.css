@@ -56,6 +56,11 @@ body {
     transform: scaleX(-1);
 }
 
+#searchButton:hover {
+    background-color: var(--darkBlue);
+    color: var(--white);
+}
+
 #content {
     display: flex;
     flex-direction: column;
