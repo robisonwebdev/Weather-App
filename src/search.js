@@ -1,3 +1,5 @@
+import searchButtonEventListener from './eventListeners/searchButton';
+
 function search(placeholder, iconClass) {
     const searchContainer = document.createElement('div');
     const searchForm = document.createElement('form');
@@ -14,6 +16,8 @@ function search(placeholder, iconClass) {
     searchButton.setAttribute('id', 'searchButton');
     searchButton.setAttribute('type', 'button');
     searchIcon.setAttribute('class', iconClass);
+
+    searchButtonEventListener(searchButton);
 
     searchButton.appendChild(searchIcon);
     searchForm.appendChild(searchInput);
