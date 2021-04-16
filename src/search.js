@@ -1,3 +1,4 @@
+import searchBarEventListener from './eventListeners/searchBar';
 import searchButtonEventListener from './eventListeners/searchButton';
 
 function search(placeholder, iconClass) {
@@ -8,6 +9,7 @@ function search(placeholder, iconClass) {
     const searchIcon = document.createElement('i');
 
     searchContainer.setAttribute('id', 'searchContainer');
+    searchForm.setAttribute('onsubmit', 'return false');
     searchForm.setAttribute('id', 'searchForm');
     searchInput.setAttribute('type', 'text');
     searchInput.setAttribute('id', 'search');
@@ -17,6 +19,7 @@ function search(placeholder, iconClass) {
     searchButton.setAttribute('type', 'button');
     searchIcon.setAttribute('class', iconClass);
 
+    searchBarEventListener(searchInput);
     searchButtonEventListener(searchButton);
 
     searchButton.appendChild(searchIcon);
