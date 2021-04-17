@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--white);
+    font-family: 'Karla', sans-serif;
     height: 100vh;
     width: 100vw;
 }
@@ -71,17 +72,52 @@ body {
     width: 100%;
 }
 
+#locationDataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+#skyData h3 {
+    font-size: 16px;
+}
+
+#cityName h2 {
+    font-size: 35px;
+}
+
 #weatherDataContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
 }
 
 #temperature {
     display: flex;
     flex-direction: row;
+    padding-right: 22px;
+}
+
+#degrees {
+    font-size: 75px;
+}
+
+.units {
+    font-size: 18px;
+}
+
+#miscStats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    border-left: 2px solid var(--blueBlack);
+    padding-left: 22px;
 }
 
 /* #searchContainer input, #searchContainer button {
