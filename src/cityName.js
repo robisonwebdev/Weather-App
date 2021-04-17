@@ -2,7 +2,7 @@ import locationData from "./storedLocationData";
 
 function cityName() {
     const cityName = document.createElement('div');
-    const h1 = document.createElement('h1');
+    const h1 = document.createElement('h2');
 
     cityName.setAttribute('id', 'cityName');
 
