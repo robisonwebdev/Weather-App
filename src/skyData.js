@@ -2,7 +2,7 @@ import locationData from "./storedLocationData";
 
 function skyData() {
     const skyData = document.createElement('div');
-    const h2 = document.createElement('h2');
+    const h2 = document.createElement('h3');
 
     skyData.setAttribute('id', 'skyData');
 
