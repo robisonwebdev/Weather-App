@@ -7,7 +7,7 @@ function temperature() {
 
     temperature.setAttribute('id', 'temperature');
     degrees.setAttribute('id', 'degrees');
-    units.setAttribute('id', 'units');
+    units.setAttribute('class', 'units');
 
     degrees.innerText = `${Math.round(locationData[0].main.temp)}`;
 
