@@ -71,6 +71,11 @@ body {
     width: 100%;
 }
 
+#temperature {
+    display: flex;
+    flex-direction: row;
+}
+
 /* #searchContainer input, #searchContainer button {
     border: none;
     margin-right: 16px;
